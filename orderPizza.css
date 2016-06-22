@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+
+#vsp {
+    -fx-background-image: url("images//background.jpg");
+    /*   -fx-background-repeat: no-repeat;   
+       -fx-background-position: left center;
+       -fx-opacity: 0.5;*/
+}
+.label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #483d8b;
+    -fx-effect: dropshadow( gaussian , rgba(145,124,25,0.5) , 0,0,0,1 );
+}
+#title-text {
+    -fx-font-size: 30px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #818181;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+#little-title-text {
+    -fx-font-size: 22px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #818181;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.button:hover {
+    -fx-background-color: linear-gradient(#9EA7E5, #61a2b1);
+    -fx-text-fill: #ffffff;
+}
+.separator {
+    -fx-skin: "com.sun.javafx.scene.control.skin.SeparatorSkin";
+}
+.separator .line {
+    -fx-border-style: segments(0.166667em, 0.166667em);
+    -fx-border-width: 0.083333em; /* 1 */
+}
+.separator:horizontal .line {
+    -fx-background: #717171;
+    -fx-border-width: 2px;
+    -fx-background-color: null;
+    -fx-padding: 0.083333em 0.0em 0.0em 0.0em; /* 1 0 0 0 */
+    -fx-border-color: derive(-fx-background,-20%) transparent transparent transparent;
+}
+.text-field.error {  
+    -fx-border-color: rgb(201, 39, 30) ;  
+    -fx-border-width: 1px ;  
+    -fx-border-radius: 3px ;
+}
+
+
+
